@@ -1,0 +1,374 @@
+/* ===================================
+   PERSONAL PORTFOLIO CSS
+=================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#ffffff;
+    line-height:1.6;
+}
+
+/* =========================
+   Navigation Bar
+========================= */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(15,23,42,.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:35px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#38bdf8;
+}
+
+/* =========================
+   Homepage
+========================= */
+
+#home{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#1d4ed8);
+    padding:100px 20px;
+}
+
+.home-content h1{
+    font-size:60px;
+}
+
+.home-content h1 span{
+    color:#38bdf8;
+}
+
+.home-content h2{
+    margin-top:15px;
+    font-size:30px;
+    color:#38bdf8;
+}
+
+.home-content p{
+    margin-top:20px;
+    max-width:700px;
+    margin-inline:auto;
+    color:#d1d5db;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:14px 32px;
+    background:#38bdf8;
+    color:#fff;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#0284c7;
+    transform:translateY(-4px);
+}
+
+/* =========================
+   Sections
+========================= */
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+    color:#38bdf8;
+}
+
+/* =========================
+   About
+========================= */
+
+.about-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.about-image img{
+    width:320px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.about-text{
+    max-width:650px;
+}
+
+.about-text h3{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.about-text p{
+    color:#d1d5db;
+    margin-bottom:15px;
+}
+
+#moreText{
+    display:none;
+}
+
+#readMoreBtn{
+    margin-top:15px;
+    padding:12px 28px;
+    border:none;
+    background:#38bdf8;
+    color:white;
+    cursor:pointer;
+    border-radius:30px;
+    transition:.3s;
+}
+
+#readMoreBtn:hover{
+    background:#0284c7;
+}
+
+/* =========================
+   Skills
+========================= */
+
+.skills-container{
+    max-width:700px;
+    margin:auto;
+}
+
+.skill{
+    margin-bottom:30px;
+}
+
+.skill-name{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+}
+
+.progress-bar{
+    width:100%;
+    height:12px;
+    background:#334155;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress{
+    width:0;
+    height:100%;
+    background:linear-gradient(to right,#38bdf8,#2563eb);
+    border-radius:20px;
+    transition:1.5s;
+}
+
+/* =========================
+   Contact
+========================= */
+
+.contact-container{
+    max-width:700px;
+    margin:auto;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+form input,
+form textarea{
+    margin-bottom:20px;
+    padding:15px;
+    background:#1e293b;
+    color:white;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+    height:170px;
+}
+
+form button{
+    padding:15px;
+    border:none;
+    background:#38bdf8;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#0284c7;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    color:#94a3b8;
+}
+
+/* =========================
+   Scroll To Top
+========================= */
+
+#topBtn{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#38bdf8;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    transition:.3s;
+}
+
+#topBtn:hover{
+    background:#0284c7;
+    transform:scale(1.1);
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media(max-width:900px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+    }
+
+    nav ul li{
+        margin:0 12px;
+    }
+
+    .home-content h1{
+        font-size:42px;
+    }
+
+    .home-content h2{
+        font-size:24px;
+    }
+
+    .about-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .about-image img{
+        width:250px;
+    }
+
+    .section-title{
+        font-size:34px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:8px;
+    }
+
+    .home-content h1{
+        font-size:34px;
+    }
+
+    .home-content h2{
+        font-size:20px;
+    }
+
+    .btn{
+        padding:12px 25px;
+    }
+
+    section{
+        padding:80px 8%;
+    }
+
+}
