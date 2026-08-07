@@ -1,26 +1,238 @@
-<!-- Homepage -->
-<span id="typing-text"></span>
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- About -->
-<div id="moreText" style="display:none;">
-    More information about yourself...
-</div>
-<button id="readMoreBtn">Read More</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
 
-<!-- Skills -->
-<section id="skills">
-    <div class="progress" data-progress="90"></div>
-    <div class="progress" data-progress="85"></div>
-    <div class="progress" data-progress="80"></div>
-</section>
+    <!-- CSS -->
+    <link rel="stylesheet" href="port.css">
 
-<!-- Contact -->
-<form id="contactForm">
-    <input type="text" id="name">
-    <input type="email" id="email">
-    <textarea id="message"></textarea>
-    <button type="submit">Send</button>
-</form>
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
 
-<!-- Scroll to Top -->
-<button id="topBtn">↑</button>
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+        <nav>
+            <h2 class="logo">Portfolio</h2>
+
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+
+    <section id="home">
+
+        <div class="home-content">
+
+            <h1>Hello, I'm <span>Your Name</span></h1>
+
+            <h2 id="typing-text"></h2>
+
+            <p>
+                Welcome to my personal portfolio website.
+                I enjoy creating websites, learning new technologies,
+                and improving my programming skills.
+            </p>
+
+            <a href="#contact" class="btn">
+                Contact Me
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section id="about">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <img src="https://via.placeholder.com/300"
+                    alt="Profile">
+
+            </div>
+
+            <div class="about-text">
+
+                <p>
+
+                    I am an aspiring web developer passionate about
+                    building modern and responsive websites.
+
+                </p>
+
+                <p id="moreText">
+
+                    I enjoy learning JavaScript, CSS, HTML, PHP,
+                    and Laravel. My goal is to become a
+                    Full Stack Developer and continuously improve
+                    my programming skills.
+
+                </p>
+
+                <button id="readMoreBtn">
+                    Read More
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+
+    <section id="skills">
+
+        <h2 class="section-title">
+            Skills
+        </h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+
+                <div class="skill-name">
+
+                    <span>HTML</span>
+
+                    <span>90%</span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress"
+                        data-progress="90">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <div class="skill-name">
+
+                    <span>CSS</span>
+
+                    <span>85%</span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress"
+                        data-progress="85">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <div class="skill-name">
+
+                    <span>JavaScript</span>
+
+                    <span>80%</span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress"
+                        data-progress="80">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2 class="section-title">
+            Contact Me
+        </h2>
+
+        <div class="contact-container">
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address">
+
+                <textarea
+                    id="message"
+                    placeholder="Your Message"></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Personal Portfolio
+        </p>
+
+    </footer>
+
+    <!-- Scroll Button -->
+
+    <button id="topBtn">
+        ↑
+    </button>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
